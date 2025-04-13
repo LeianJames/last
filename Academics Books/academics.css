@@ -1,0 +1,175 @@
+.search-results-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Results content */
+  .results-content {
+    width: 100%;
+  }
+  
+  .results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .results-controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Result items */
+  .result-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+  }
+  
+  .result-number {
+    font-weight: bold;
+    margin-right: 15px;
+    min-width: 25px;
+  }
+  
+  .result-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .result-author, .result-publication, .result-description {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .result-actions {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .check-availability {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .toggle-availability {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .library-location {
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Pagination */
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .pagination button:hover:not(.active) {
+    background: #e9e9e9;
+  }
+  
+  /* Admin Button */
+  .admin-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .admin-button.active {
+    background-color: #dc3545;
+  }
+  
+  /* Popup Styles */
+  .availability-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-popup:hover {
+    color: black;
+  }
+  
+
+  @media (max-width: 768px) {
+    .results-content {
+      width: 100%;
+    }
+    
+    .results-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .results-controls {
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    
+    .popup-content {
+      width: 90%;
+      margin: 30% auto;
+    }
+  }
